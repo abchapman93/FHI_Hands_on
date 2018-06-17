@@ -2302,7 +2302,18 @@ Direction: forward
 Lex: not
 Regex: ''
 Type: FAMILY
-
+---
+Comments: ''
+Direction: forward
+Lex: sister
+Regex: ''
+Type: FAMILY
+---
+Comments: ''
+Direction: forward
+Lex: niece
+Regex: ''
+Type: FAMILY
 ---
 Comments: ''
 Direction: backward

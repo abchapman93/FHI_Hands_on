@@ -2297,7 +2297,6 @@ Direction: forward
 Lex: h/o
 Regex: ''
 Type: FAMILY
-
 ---
 Comments: ''
 Direction: backward
