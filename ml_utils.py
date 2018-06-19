@@ -4,6 +4,11 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import f1_score
+from sklearn.feature_extraction.text import CountVectorizer
+from nltk.tokenize import word_tokenize
+import pandas as pd
+import sklearn
+from nlp_pneumonia_utils import read_doc_annotations
 
 from sklearn.externals.six import StringIO  
 from IPython.display import Image  
@@ -47,6 +52,7 @@ def read_in_data():
                           if doc.annotations[0].type == pos_doc_type
                           else (doc.text, "Negative Document") 
                           for doc in docs_test.values()))
+    return texts_train, labels_train, texts_test, labels_test
 
     
 def preprocess(text):
